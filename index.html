@@ -59,7 +59,8 @@
 											<span class="blue-text">Italy</span>, <span class="blue-text">France</span>,
 											<span class="blue-text">U. S. A.</span> and <span class="blue-text">U.
 												K.</span> who are well known for their high quality products and
-											services in the <span class="blue-text">Flexographic Industry</span>.</p>
+											services in the <span class="blue-text">Flexographic Industry</span>.
+										</p>
 										<p>With the knowledge and expertise of the <span class="blue-text">Flexographic
 												Industry</span> for over <span class="blue-text no-break">20
 												years</span> you know you can trust us.</p>
@@ -82,91 +83,7 @@
 						</div>
 					</div>
 					<hr />
-					<div class="company-rows row">
-						<div class="span4">
-							<a href="http://www.praticompany.com/" target="_blank"><img src="img/pra.png"
-									alt="PRATI - Italy"></a>
-							<br />
-							<h4>PRATI - Italy</h4>
-							<p>Slitter Rewinder</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.ist-uv.com/?L=1" target="_blank"><img src="img/ist.png"
-									alt="IST METZ GmbH"></a>
-							<br />
-							<h4>IST METZ GmbH</h4>
-							<p>U.V. Systems</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.zecher.com/" target="_blank"><img src="img/zec.png"
-									alt="Zecher GmbH"></a>
-							<br />
-							<h4>Zecher GmbH</h4>
-							<p>Anilox Rolls</p>
-						</div>
-					</div>
-					<div class="company-rows row">
-						<div class="span4">
-							<a href="http://www.kisscut.fr/en/" target="_blank"><img src="img/kiss.png"
-									alt="Kisscut - France"></a>
-							<br />
-							<h4>Kisscut - France</h4>
-							<p>Flexible Dies</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.polywest.de/en/" target="_blank"><img src="img/poly.png"
-									alt="POLYWEST"></a>
-							<br />
-							<h4>POLYWEST</h4>
-							<p>Sleeve Systems</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.wilsonmfg.com/" target="_blank"><img src="img/wil.png"
-									alt="Wilson Manufacturing Company - USA"></a>
-							<br />
-							<h4>Wilson Manufacturing Company - USA</h4>
-							<p>Rotary Solid Dies</p>
-						</div>
-					</div>
-					<div class="company-rows row">
-						<div class="span4">
-							<a href="http://www.rotometal.pl/?lang=en" target="_blank"><img src="img/roto.png"
-									alt="Rotometal - Poland"></a>
-							<br />
-							<h4>Rotometal - Poland</h4>
-							<p>Rotary Tooling</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.polymount-int.nl/" target="_blank"><img src="img/polymount.png"
-									alt="Polymount - The Netherlands"></a>
-							<br />
-							<h4>Polymount - The Netherlands</h4>
-							<p>Film Cleaner & Plate Cleaner</p>
-						</div>
-						<div class="span4">
-							<a href="http://www.jmheaford.co.uk/" target="_blank"><img src="img/jm.jpg"
-									alt="JM Heaford - UK"></a>
-							<br />
-							<h4>JM Heaford - UK</h4>
-							<p>Mounting and Proofing Solutions</p>
-						</div>
-					</div>
-					<div class="company-rows row">
-						<div class="span4">
-							<a href="https://alphasonics.co.uk/" target="_blank"><img src="img/alp.png"
-									alt="Alphasonics - UK"></a>
-							<br />
-							<h4>Alphasonics - UK</h4>
-							<p>Ultrasonic Cleaning Equipment</p>
-						</div>
-						<div class="span4">
-							<a href="https://www.inkspec.com/" target="_blank"><img src="img/ink.png"
-									alt="Alphasonics - UK"></a>
-							<br />
-							<h4>Inkspec - Canada</h4>
-							<p>Ink Viscosity Control</p>
-						</div>
-					</div>
+					<div id="myDiv"></div>
 				</div>
 			</div>
 		</div>
@@ -247,7 +164,45 @@
 	<script type="text/javascript" src="ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () { $(".nav li a[href^='#']").bind("click", function (e) { e.preventDefault(); $("html, body").animate({ scrollTop: $(this.hash).offset().top + 1 }, 500, "swing") }); $(".menuoffset").height($("#header-container").height()); $(".box").each(function () { if ($(this).height() <= $(window).height()) { $(this).css({ height: $(window).height() + "px" }) } }) })
+		$(document).ready(function () {
+			var rows = [{ "name": "PRATI - Italy", "image": "img/pra.png", "description": "Slitter Rewinder", "website": "https://www.praticompany.com/" }, { "name": "IST METZ GmbH", "image": "img/ist.png", "description": "U.V. Systems", "website": "https://www.ist-uv.com/?L=1" }, { "name": "Zecher GmbH", "image": "img/zec.png", "description": "Anilox Rolls", "website": "https://www.zecher.com/" }, { "name": "Kisscut - France", "image": "img/kiss.png", "description": "Flexible Dies", "website": "https://www.kisscut.fr/en/" }, { "name": "POLYWEST", "image": "img/poly.png", "description": "Sleeve Systems", "website": "https://www.polywest.de/en/" }, { "name": "Wilson Manufacturing Company - USA", "image": "img/wil.png", "description": "Rotary Solid Dies", "website": "https://www.wilsonmfg.com/" }, { "name": "Rotometal - Poland", "image": "img/roto.png", "description": "Rotary Tooling", "website": "https://www.rotometal.pl/?lang=en" }, { "name": "Polymount - The Netherlands", "image": "img/polymount.png", "description": "Film Cleaner & Plate Cleaner", "website": "https://www.polymount-int.nl/" }, { "name": "JM Heaford - UK", "image": "img/jm.jpg", "description": "Mounting and Proofing Solutions", "website": "https://www.jmheaford.co.uk/" }, { "name": "Alphasonics - UK", "image": "img/alp.png", "description": "Ultrasonic Cleaning Equipment", "website": "https://alphasonics.co.uk/" }, { "name": "Inkspec - Canada", "image": "img/ink.png", "description": "Ink Viscosity Control", "website": "https://www.inkspec.com/" }];
+
+			var html = '';
+
+			for (var i = 0; i < rows.length; i++) {
+				if (i % 3 === 0) {
+					html += '<div class="company-rows row">';
+				}
+
+				html += '<div class="span4">';
+				html += '<a href="' + rows[i].website + '" target="_blank"><img src="' + rows[i].image + '" alt="' + rows[i].company + '"></a>';
+				html += '<br />';
+				html += '<h4>' + rows[i].company + '</h4>';
+				html += '<p>' + rows[i].description + '</p>';
+				html += '</div>';
+
+				if ((i + 1) % 3 === 0 || i === rows.length - 1) {
+					html += '</div>';
+				}
+			}
+
+			html;
+			$('#myDiv').html(html);
+			$(".nav li a[href^='#']").bind("click", function (e) {
+				e.preventDefault();
+				$("html, body").animate({
+					scrollTop: $(this.hash).offset().top + 1
+				}, 500, "swing")
+			});
+			$(".menuoffset").height($("#header-container").height());
+			$(".box").each(function () {
+				if ($(this).height() <= $(window).height()) {
+					$(this).css({
+						height: $(window).height() + "px"
+					})
+				}
+			})
+		})
 	</script>
 </body>
 
