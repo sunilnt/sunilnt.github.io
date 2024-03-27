@@ -165,7 +165,18 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-			var rows = [{ "name": "PRATI - Italy", "image": "img/pra.png", "description": "Slitter Rewinder", "website": "https://www.praticompany.com/" }, { "name": "IST METZ GmbH", "image": "img/ist.png", "description": "U.V. Systems", "website": "https://www.ist-uv.com/?L=1" }, { "name": "Zecher GmbH", "image": "img/zec.png", "description": "Anilox Rolls", "website": "https://www.zecher.com/" }, { "name": "Kisscut - France", "image": "img/kiss.png", "description": "Flexible Dies", "website": "https://www.kisscut.fr/en/" }, { "name": "POLYWEST", "image": "img/poly.png", "description": "Sleeve Systems", "website": "https://www.polywest.de/en/" }, { "name": "Wilson Manufacturing Company - USA", "image": "img/wil.png", "description": "Rotary Solid Dies", "website": "https://www.wilsonmfg.com/" }, { "name": "Rotometal - Poland", "image": "img/roto.png", "description": "Rotary Tooling", "website": "https://www.rotometal.pl/?lang=en" }, { "name": "Polymount - The Netherlands", "image": "img/polymount.png", "description": "Film Cleaner & Plate Cleaner", "website": "https://www.polymount-int.nl/" }, { "name": "JM Heaford - UK", "image": "img/jm.jpg", "description": "Mounting and Proofing Solutions", "website": "https://www.jmheaford.co.uk/" }, { "name": "Alphasonics - UK", "image": "img/alp.png", "description": "Ultrasonic Cleaning Equipment", "website": "https://alphasonics.co.uk/" }, { "name": "Inkspec - Canada", "image": "img/ink.png", "description": "Ink Viscosity Control", "website": "https://www.inkspec.com/" }];
+			var rows = [
+				{ "name": "Inkspec - Canada", "image": "img/ink.png", "description": "Ink Viscosity Control", "website": "https://www.inkspec.com/" },
+				{ "name": "PRATI - Italy", "image": "img/pra.png", "description": "Slitter Rewinder", "website": "https://www.praticompany.com/" },
+				{ "name": "IST METZ GmbH", "image": "img/ist.png", "description": "U.V. Systems", "website": "https://www.ist-uv.com/?L=1" },
+				{ "name": "Zecher GmbH", "image": "img/zec.png", "description": "Anilox Rolls", "website": "https://www.zecher.com/" },
+				{ "name": "Kisscut - France", "image": "img/kiss.png", "description": "Flexible Dies", "website": "https://www.kisscut.fr/en/" },
+				{ "name": "POLYWEST", "image": "img/poly.png", "description": "Sleeve Systems", "website": "https://www.polywest.de/en/" },
+				{ "name": "Wilson Manufacturing Company - USA", "image": "img/wil.png", "description": "Rotary Solid Dies", "website": "https://www.wilsonmfg.com/" },
+				{ "name": "Rotometal - Poland", "image": "img/roto.png", "description": "Rotary Tooling", "website": "https://www.rotometal.pl/?lang=en" },
+				{ "name": "JM Heaford - UK", "image": "img/jm.jpg", "description": "Mounting and Proofing Solutions", "website": "https://www.jmheaford.co.uk/" },
+				{ "name": "Alphasonics - UK", "image": "img/alp.png", "description": "Ultrasonic Cleaning Equipment", "website": "https://alphasonics.co.uk/" }
+			];
 
 			var html = '';
 
@@ -177,7 +188,7 @@
 				html += '<div class="span4">';
 				html += '<a href="' + rows[i].website + '" target="_blank"><img src="' + rows[i].image + '" alt="' + rows[i].company + '"></a>';
 				html += '<br />';
-				html += '<h4>' + rows[i].company + '</h4>';
+				html += '<h4>' + rows[i].name + '</h4>';
 				html += '<p>' + rows[i].description + '</p>';
 				html += '</div>';
 
