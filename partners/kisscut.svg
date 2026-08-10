@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" role="img" aria-labelledby="title">
+  <title id="title">KISSCUT</title>
+  <rect width="520" height="140" rx="4" fill="#fff"/>
+  <path d="M30 28h22v34l30-34h28L72 69l41 43H83L52 76v36H30z" fill="#123d6a"/>
+  <text x="118" y="93" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="-3" fill="#123d6a">KISSCUT</text>
+  <path d="M118 105h365" stroke="#d9832e" stroke-width="6"/>
+</svg>
