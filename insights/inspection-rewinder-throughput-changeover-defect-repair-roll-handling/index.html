@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071621">
+  <meta name="description" content="Improve label inspection-rewinder throughput by separating setup, defect repair, slitting, roll change and release losses before increasing machine speed.">
+  <meta name="author" content="Royal Coat">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://royalcoatworld.com/insights/inspection-rewinder-throughput-changeover-defect-repair-roll-handling/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://royalcoatworld.com/insights/inspection-rewinder-throughput-changeover-defect-repair-roll-handling/">
+  <meta property="og:title" content="Inspection Rewinder Throughput Keeps Falling? Measure Changeover, Defect Repair and Roll Handling Separately">
+  <meta property="og:description" content="Improve label inspection-rewinder throughput by separating setup, defect repair, slitting, roll change and release losses before increasing machine speed.">
+  <meta property="og:image" content="https://royalcoatworld.com/royal-coat/royal-coat-logo-transparent.png">
+  <meta property="og:site_name" content="Royal Coat">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="/royal-coat/rc-logo.png">
+  <link rel="stylesheet" href="/blog.css">
+  <title>Inspection Rewinder Throughput Keeps Falling? Measure Changeover, Defect Repair and Roll Handling Separately | Royal Coat Insights</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://royalcoatworld.com/insights/inspection-rewinder-throughput-changeover-defect-repair-roll-handling/#article","headline":"Inspection Rewinder Throughput Keeps Falling? Measure Changeover, Defect Repair and Roll Handling Separately","description":"Improve label inspection-rewinder throughput by separating setup, defect repair, slitting, roll change and release losses before increasing machine speed.","datePublished":"2026-11-05","dateModified":"2026-11-05","mainEntityOfPage":"https://royalcoatworld.com/insights/inspection-rewinder-throughput-changeover-defect-repair-roll-handling/","author":{"@type":"Organization","name":"Royal Coat","url":"https://royalcoatworld.com"},"publisher":{"@type":"Organization","name":"Royal Coat","url":"https://royalcoatworld.com","logo":{"@type":"ImageObject","url":"https://royalcoatworld.com/royal-coat/royal-coat-logo-transparent.png"}},"about":["Flexographic printing","Inspection Rewinder Productivity Diagnosis"],"keywords":"Inspection Rewinder Productivity Diagnosis, flexographic printing India, labels and flexible packaging","citation":["https://www.praticompany.com/report-from-labelexpo-europe-2025/","https://www.nist.gov/programs-projects/monitoring-diagnostics-and-prognostics-manufacturing-operations","https://nvlpubs.nist.gov/nistpubs/ams/NIST.AMS.300-11.pdf","https://www.iso.org/standard/56847.html"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Royal Coat","item":"https://royalcoatworld.com/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://royalcoatworld.com/insights/"},{"@type":"ListItem","position":3,"name":"Inspection Rewinder Throughput Keeps Falling? Measure Changeover, Defect Repair and Roll Handling Separately","item":"https://royalcoatworld.com/insights/inspection-rewinder-throughput-changeover-defect-repair-roll-handling/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is the inspection rewinder slow when its running speed is correct?","acceptedAnswer":{"@type":"Answer","text":"The loss may sit in setup, waiting, defect repair, splicing, roll removal, labelling or release rather than steady running speed. Time those steps separately."}},{"@type":"Question","name":"When should changeover time end?","acceptedAnswer":{"@type":"Answer","text":"End it at the first accepted finished roll, not when the web first moves. Corrections and waste before acceptance still belong to changeover."}},{"@type":"Question","name":"What should be recorded for each defect intervention?","acceptedAnswer":{"@type":"Answer","text":"Record the defect type, position accuracy, search time, material removed, splice time, false alarms and whether the repaired roll passed release."}},{"@type":"Question","name":"Will a higher maximum speed fix a finishing bottleneck?","acceptedAnswer":{"@type":"Answer","text":"Only when productive running speed is the main loss. It will not correct missing job data, long setup, repeated defect searches or slow roll handling."}},{"@type":"Question","name":"What information is needed to specify inspection-rewinder automation?","acceptedAnswer":{"@type":"Answer","text":"Provide substrate and liner, web width, slit plan, roll dimensions, job lengths, defect frequency, inspection standard, splice rule, current time study and required shift output."}}]}]}</script>
+</head>
+<body>
+  <header class="insight-header">
+    <a class="insight-brand" href="/" aria-label="Royal Coat home"><img src="/royal-coat/royal-coat-logo-transparent.png" alt="Royal Coat"></a>
+    <nav aria-label="Page navigation"><a href="/">Company</a><a href="/insights/">All Insights</a><a class="contact-link" href="/#contact">Get in Touch</a></nav>
+  </header>
+  <main>
+    <article class="article">
+      <header class="article-hero">
+        <div class="article-hero__inner">
+          <a class="back-link" href="/insights/">← Royal Coat Insights</a>
+          <p class="eyebrow">Inspection Rewinder Productivity Diagnosis</p>
+          <h1>Inspection Rewinder Throughput Keeps Falling? Measure Changeover, Defect Repair and Roll Handling Separately</h1>
+          <p class="dek">Improve label inspection-rewinder throughput by separating setup, defect repair, slitting, roll change and release losses before increasing machine speed.</p>
+          <div class="article-meta"><time datetime="2026-11-05">5 November 2026</time><span>6 min read</span><span>Royal Coat</span></div>
+        </div>
+      </header>
+      <div class="article-layout">
+        <div class="article-body">
+          <p class="intro">An inspection rewinder can reach its set speed and still hold up the finishing department. The missing production is often outside the steady run: the job waits for a defect map, knives are positioned again, a splice takes too long, finished rolls are removed slowly or the operator cannot release the roll without another check. Before comparing a faster machine, divide the lost time into named steps. The largest loss may have little to do with maximum web speed.</p>
+          <section>
+      <h2>Start with one shift of event times, not one average speed</h2>
+      <p>Record the planned start, material arrival, first web movement, first accepted roll and final accepted roll for every job on one inspection slitter rewinder. Between those points, mark setup, web threading, knife positioning, camera setup, defect repair, roll change, sample approval, cleaning, maintenance and waiting. Use a simple reason code and let the operator add a short note when the code does not explain the stop.</p>
+<p>Keep run speed and productive time separate. A machine may run at the expected speed for twenty minutes and then wait fifteen minutes for a new core, a missing inspection file or a decision on whether a marked defect is acceptable. The shift average will look poor, but increasing the set speed will not remove that wait. It may instead produce finished rolls faster than they can be checked, removed and labelled.</p>
+<p>NIST describes overall equipment effectiveness as availability multiplied by performance and quality. That distinction is useful here even if the plant does not calculate a formal OEE figure. Availability asks whether the rewinder was ready to run, performance asks how it ran during operating time, and quality asks how much output passed the defined requirement. Keep those questions separate so that one number does not hide three different problems.</p>
+    </section>
+<section>
+      <h2>Split changeover at the first accepted finished roll</h2>
+      <p>Measure changeover from the last accepted roll of the previous job to the first accepted roll of the next job. Then divide it into tasks: removing finished rolls, clearing cores and trim, loading the parent roll, threading, entering the job, setting guides, positioning knives, loading the defect file, setting the counter and approving the first roll. This shows whether the delay comes from the machine, the work instruction, material staging or the release procedure.</p>
+<p>Do not count the first moving web as the end of setup. If the operator still needs to correct slit width, tension, count or camera settings, the job is not yet producing saleable rolls. Record the material consumed before acceptance as setup waste. A faster acceleration or automatic knife positioner has value only when the surrounding steps are ready to use it.</p>
+<p>PRATI describes current SATURN configurations with inspection, slitting and rewinding functions, while SATURN Next adds automatic setup, defect positioning, cutting, waste editing and splicing in its advanced configuration. These functions address particular tasks. The plant still needs its own time study to decide which task is limiting output and which level of automation is justified for the actual job mix.</p>
+    </section>
+<section>
+      <h2>Treat defect repair as a production route of its own</h2>
+      <p>A roll with no marked defect follows a different route from a roll that must stop, reverse, locate the fault, remove material, splice and return to running direction. Record the number of defect interventions, the time per intervention and the metres removed. Also record false alarms and defects that cannot be located at the expected position. That evidence separates inspection-system performance from the mechanics of cutting and splicing.</p>
+<p>If the camera creates a defect map on the press or inspection system, check how the rewinder receives and interprets that data. A file that is late, named incorrectly or tied to the wrong roll creates a waiting loss before the first splice. A position that drifts during the roll creates repeated searching. Verify roll identity, reference position, web direction and the operator&#039;s release rule before blaming the rewinder.</p>
+<p>Where defect rejection and splicing are automated, define the acceptance rule before enabling the sequence. Some marks require removal, some require review and some are process artefacts that should not stop the job. Automation can reduce manual intervention, but it cannot correct an unclear defect standard. Keep an accepted and failed sample with the job so that the decision is consistent across operators and shifts.</p>
+    </section>
+<section>
+      <h2>Specify the improvement from the loss register</h2>
+      <p>After several comparable jobs, rank the losses by minutes and frequency. If knife setup dominates, investigate repeatable slit plans, verified knife references and automatic positioning. If defect repair dominates, examine defect-map accuracy, web reversal, splice method and automated waste editing. If roll handling dominates, review shaft, core, roll-removal and labelling arrangements. If waiting dominates, correct material staging and job data before changing machinery.</p>
+<p>Compare alternatives using the same job family: substrate and liner, parent-roll width and diameter, number of lanes, finished-roll diameter, run length, normal defect count, splice rule, inspection requirement and release evidence. A pharmaceutical label, a clear-on-clear cosmetic label and a plain logistics label may use the same rewinder but impose very different checks and intervention times. One headline speed cannot describe all three.</p>
+<p>Run a controlled trial and compare first accepted roll time, productive running time, intervention time, setup waste, accepted output and operator actions. ISO 22400 provides an industry-neutral framework for defining and using manufacturing KPIs; the practical point is to define each measure before comparing results. For a Royal Coat review, send the job mix, web and roll dimensions, slit plan, defect workflow, current time study and the output required per shift.</p>
+    </section>
+          <section class="faq" aria-labelledby="faq-title"><p class="eyebrow">Questions from production and purchasing teams</p><h2 id="faq-title">What to ask about inspection rewinder productivity diagnosis</h2>
+    <details>
+      <summary>Why is the inspection rewinder slow when its running speed is correct?</summary>
+      <p>The loss may sit in setup, waiting, defect repair, splicing, roll removal, labelling or release rather than steady running speed. Time those steps separately.</p>
+    </details>
+    <details>
+      <summary>When should changeover time end?</summary>
+      <p>End it at the first accepted finished roll, not when the web first moves. Corrections and waste before acceptance still belong to changeover.</p>
+    </details>
+    <details>
+      <summary>What should be recorded for each defect intervention?</summary>
+      <p>Record the defect type, position accuracy, search time, material removed, splice time, false alarms and whether the repaired roll passed release.</p>
+    </details>
+    <details>
+      <summary>Will a higher maximum speed fix a finishing bottleneck?</summary>
+      <p>Only when productive running speed is the main loss. It will not correct missing job data, long setup, repeated defect searches or slow roll handling.</p>
+    </details>
+    <details>
+      <summary>What information is needed to specify inspection-rewinder automation?</summary>
+      <p>Provide substrate and liner, web width, slit plan, roll dimensions, job lengths, defect frequency, inspection standard, splice rule, current time study and required shift output.</p>
+    </details></section>
+        </div>
+        <aside class="article-cta"><p class="eyebrow">Discuss the job</p><h2>Send the details to Royal Coat.</h2><p>Include the press, substrate, web width, speed and the result you need or the defect you are seeing.</p><a href="mailto:sunilnt@royalcoatworld.com?subject=Inspection%20Rewinder%20Productivity%20Diagnosis%20enquiry">Email the Team</a><small>sunilnt@royalcoatworld.com</small></aside>
+      </div>
+    </article>
+    <section class="related"><p class="eyebrow">Continue reading</p><h2>More Royal Coat Insights</h2><div>
+    <a href="/insights/automatic-defect-rejection-splicing-label-rewinder-specification/"><span>Inspection and Automated Defect Removal</span><strong>Should a Label Rewinder Reject and Splice Defects Automatically? Define the Defect Rules First</strong></a>
+    <a href="/insights/inspection-rewinder-defect-removal-final-roll-control/"><span>Inspection Rewinding</span><strong>Inspection Rewinder Defect Removal: How to Release a Finished Roll With Evidence</strong></a>
+    <a href="/insights/digital-converting-job-changeover-first-saleable-roll/"><span>Digital Converting Changeover</span><strong>Digital Converting Job Changeover: What to Lock Before the First Saleable Roll</strong></a></div></section>
+  </main>
+  <footer class="insight-footer">
+    <div><strong>Royal Coat</strong><p>Sales and application support across India, Bangladesh, Sri Lanka, Nigeria and Kenya.</p></div>
+    <div><a href="/">Company website</a><a href="/insights/">All Insights</a><a href="/privacy/">Privacy policy</a><a href="mailto:sunilnt@royalcoatworld.com">sunilnt@royalcoatworld.com</a></div>
+    <p class="copyright">© 2026 Royal Coat. Mumbai, India.</p>
+  </footer>
+</body>
+</html>
